@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=EB+Garamond:ital@1&family=Gwendolyn:wght@400;700&family=Inconsolata:wght@200..900&display=swap');
+
+* {
+    box-sizing: border-box;  /* Ensures padding and border are included in the element's total width and height */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-weight: 400;
+   background-image: linear-gradient(to right, #987D9A, #EECEB9 50%, #987D9A);
+
+
+    width: 100%;
+    overflow-x: hidden;      /* Prevent horizontal scrolling */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color:#987D9A;
+    height: 100px;
+    width: 100%;        
+    color: #921A40;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.adj{
+    display:flex;
+    justify-content: center;
+
+}
+.fav{
+    font-size: 50px;
+}
+
+#count{
+    font-size: 50px;
+
+}
+
+
+.logo {
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;            
+}
+
+.col {
+    color:#5D0E41;
+}
+
+.library{
+    display: grid;
+    grid-template-columns: repeat(3,auto); /* Ensure columns share space evenly */
+    
+    gap: 10px;
+    width: 100%;
+}
+
+.cinema {
+    padding-top: 5px;
+    padding-bottom: 10px;
+        word-wrap: break-word;  /* Ensure long words break and wrap within the container */
+    overflow-wrap: break-word; /* Ensures that long words break within the column */
+    max-width: 100%;        /* Prevents content from exceeding the column width */
+    text-align:center;
+    box-shadow: 
+        5px 0px 5px rgba(0, 0, 0, 0.5),   
+       -5px 0px 5px rgba(0, 0, 0, 0.5),   
+        0px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+.cinema:hover{
+    transform: scale(1.1);
+}
+.cinema.img{
+    width:200px
+}
